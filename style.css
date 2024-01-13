@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    font-family: "Noto Kufi Arabic", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-family: 'Poppins', sans-serif;    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(54, 54, 54);
+    position: fixed;
+    width: 100%;
+
+}
+
+nav a{
+    display: flex;
+    padding: 5px 30px;
+    text-decoration: none; 
+    z-index: 100;
+    color: white;
+    transition: all .2s;
+    font-weight: 900;
+
+}
+
+nav a:hover{
+    color: #274943;
+    transform:scale(1.1);
+
+
+}
+
+
+h1{
+    
+    background-image: url(pexels-pixmike-413195.jpg);
+
+}
+h1 mark{
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.649);
+    font-size: 1.5em;
+    
+    color: rgb(0, 0, 0)
+    
+}
+p{
+    background-color: rgba(0, 128, 255, 0.489);
+    padding: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    font-weight: 900;
+}
+
+
+.headerright a button{
+    background-color: #99b953;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    text-align: center;
+    font-size: .7em;
+    transition: all .2s ease;
+}
+
+.headerright a button:hover{
+    transform: scale(1.1);
+    background-color: #61cfbb;
+    color: #eaffac;
+    border-radius: 30px;
+
+}
+
+.headerleft a button{
+    background-color: #b95353;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    text-align: center;
+    font-size: .7em;
+    transition: all .2s ease;
+}
+
+.headerleft a button:hover{
+    transform: scale(1.1);
+    background-color: #cc00ff;
+    color: #eaffac;
+    border-radius: 50px;
+
+}
+
+@media screen and (max-width : 700px) {
+    p{
+        font-size: 1.2em;
+    }
+    h1 mark {
+        font-size: .8em;
+    }
+    .headerlink{
+        font-size: .5em;
+    }
+    .headerright a button{
+        font-size: .6em;
+    }
+    .headerleft a button{
+        font-size: .6em;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(54, 54, 54);
+        position: fixed;
+        width: 100%;
+    
+    }
+    
+    nav a{
+        display: flex;
+        padding: 5px 10px;
+        text-decoration: none; 
+        z-index: 100;
+        color: white;
+        transition: all .2s;
+        font-weight: 200;
+    
+    }
+}
